@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<style>
+*{
+    box-sizing: border-box;
+}
+.nar  img{
+    width: 63%;
+    margin-left: 51px;
+    height: auto;
+}
+.bakcell  img{
+    width:100%;
+    height:auto;
+}
+   
+   
+.hesab  img{
+    width: 76%;
+    height: auto;
+    margin-left: 33px;
+} 
+    body,html{
+        padding:0;
+        margin:0;
+    }
+    .box{
+   display:flex;
+   align-items:center;
+   justify-content: center;
+        height:350px; 
+        flex-direction:column;
+        border:1px solid rgb(241, 241, 241);
+    }
+  
+    .box .btn{
+        outline:none;
+        color:black;
+        background-color: rgb(241, 241, 241);;
+    }
+
+    .balance .container{
+        border-radius:4px;padding:5px;
+        background-color: rgb(192, 184, 184);
+    }  
+    .balance .container p{
+        color:white;
+        font-size:30px;
+        font-weight: 700;
+    }
+</style>
+
+</head>
+
+
+<body>
+
+<div class="balance">
+    <div class="container ">
+<p id="balanceSpan"class="ml-5">
+    Balans: <span id="information">0</span> ₼ 
+</p>
+    </div>
+</div>
+
+    <div class="pay mt-5">
+ 
+    <div class="container">
+        <div class="row">
+    <div class="col-lg-3">
+<div class="azercell box ">
+<div class="image mb-5">
+    <img src="image/azercell.png" alt="">
+</div>
+<div class="description ">
+<h4 class="mb-4">
+    Azercell
+</h4>
+<button class="btn" id="azBtn">
+    Ödəniş et
+</button>
+</div>
+</div>
+    </div>
+    <div class="col-lg-3">
+<div class="bakcell box ">
+<div class="image mb-5">
+<img src="image/logo_bakcell_main.jpg" alt="">
+</div>
+<div class="description ">
+    <h4 class="mb-4">
+   Bakcell
+    </h4>
+    <button class="btn" id="bakBtn">
+        Ödəniş et
+    </button>
+    </div>
+</div>
+    </div>
+    <div class="col-lg-3">
+        <div class="nar box ">
+            <div class="image mb-5">
+            <img src="image/nar.png" alt="">
+            </div>
+            <div class="description ">
+                <h4 class="mt-5 ml-4">
+               Nar
+                </h4>
+                <button class="btn mt-2"id="narBtn">
+                    Ödəniş et
+                </button>
+                </div>
+            </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="hesab box ">
+            <div class="image mb-5">
+<img src="image/wallet.png"  alt="">
+            </div>
+            <div class="description ">
+            <h4 class="mb-4">
+                Hesabım
+            </h4>
+            <button class="btn" id="walletBtn">
+                Ödəniş et
+            </button>
+            </div>
+            </div>
+    </div>
+        </div>
+    </div>   </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

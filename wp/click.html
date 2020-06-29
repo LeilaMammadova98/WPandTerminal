@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b4026515fc.js" crossorigin="anonymous"></script>
+   <style>
+
+html,body{padding:0;
+margin:0;}
+
+*{box-sizing: border-box;}
+
+.bashliq h3{
+    text-align:center;
+}
+input[type=text]{border:none;
+}
+.left{margin-left:-17px;}
+
+
+input[type=text]:focus{
+outline:none}
+.blue{color:#6a6ac5;
+}
+
+.mob{position:relative;}
+.fa-chevron-right{position:absolute;
+color:rgb(224, 217, 217);
+right: 58px;
+    top: 7px;}
+.cancel h5{color:#7e7ede;
+   }
+.save{color:rgb(224, 217, 217);}
+#save.active{color:#6a6ac5}
+.firstName>.container>.row>.col-lg-3{padding-left:0;}
+.main{
+height:600px;
+    display:inline-block;
+    width:60%;
+    border:1px solid rgb(224, 217, 217);;
+}
+.top{ justify-content: space-between;}
+
+
+.firstName>.container>.row>.col-lg-9{border-bottom:1px solid rgb(224, 217, 217);
+/* padding-left:10px; */
+width:100%; }
+.lastName{border-bottom:1px solid rgb(224, 217, 217);}
+
+.font-weight{
+  font-weight: 500;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.cancel a:hover{text-decoration:none}
+.country>.container>.row>.col-9{
+    border-bottom:1px solid rgb(224, 217, 217)
+}
+input[type=number]{
+    border:none;
+  
+    margin-left: 5px;
+    /* color: #a39d9d; */
+
+}
+
+/* #save.active{color:blue;
+} */
+#save{border:none;
+  color:rgb(224, 217, 217);
+background-color: white;}
+#save:focus{border:none;
+outline:none}
+input[type=number]:focus{border:none;outline:none;
+
+}
+#sel{
+  border:none;
+  outline:none;
+  color:black;
+  width:97%;
+}
+ #sel option {
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-left:3px;
+  display: inline-block;
+
+}
+
+#sel option:hover{  border:none;
+outline:none;
+background-color: none;}
+.country>.container>.row>.col-9{
+  padding:0;
+}
+#numberCode{
+  color:black;
+}
+   </style>
+</head>
+<body>
+    
+<section >
+<div class="container">
+    <div class="row">
+<div class="col-lg-12">
+
+
+    <div class="main mt-5  pt-2 pb-4">
+      
+
+     
+
+      
+
+<div class="top d-flex mt-3  pr-3">
+
+<div class="cancel">
+    <h5 class="pl-3">
+  <a href="contacts.html">     Cancel</a> 
+    </h5>
+
+</div>
+
+    <div class="nameOf">
+        <h5>
+            <b>New Contact</b>
+        </h5>
+    </div>
+    <form id="form"novalidate>
+    <div class="save1">
+  <button id="save">
+   <b>
+
+  <h5>
+
+
+       Save  </h5>
+  </b>
+      </button>  
+  
+</div>
+</div>
+
+<div class="input mt-5">
+
+
+  <div class="firstName ">
+      <div class="container">
+
+   
+<div class="row">
+  <!-- </div> -->
+<div class="col-lg-3">
+   
+<h5 class="pl-3 font-weight">
+ 
+        Name
+    
+</h5>
+</div>
+<div class="col-lg-9">
+   
+
+    
+<input type="text"class="left pb-2"name="firstName" id=""placeholder="First name">
+</div></div>
+</div>  
+ </div>
+
+
+
+
+<div class="lastName">
+<div class="container">
+
+
+<div class="row">
+
+
+<div class="col-lg-3">
+
+</div>
+<div class="col-lg-9">
+    <input type="text" class="left pb-2 pt-2" name="lastName" id=""placeholder="Last name">
+
+</div></div></div>
+</div>
+
+
+<div class="country mt-2">
+    <div class="container">
+
+    
+    <div class="row">
+        <div class="col-3">
+            <div class="title">
+                <h5 class="font-weight">
+                 Phone
+                </h5>
+            </div>
+                    </div>
+                    <div class="col-9">
+                            <select name="selection" id="sel">
+    
+                              <option  value="+994">Azerbaijan</option>
+                              <option value="+90">Turkey</option>
+                              <option value="+98">Iran</option>
+                              <option value="+86">China</option>
+                              <option value="+1">USA</option>
+                              <option value="+44">England</option>
+                              <option value="+49">Germany</option>
+                              <option value="+31">Netherlands</option>
+                              <option value="+123">Litva</option>
+                              <option value="+45">France</option>
+                              <option value="+99">Italy</option>
+                              <option value="+15">Poland</option>
+                              <option value="+43">Japan</option>
+                            </select>
+                          </div>
+                    <!-- </div> -->
+                    <div class="col-3 pt-2">
+                        <div class="title mob d-flex flex-row">
+                            <h5 class="blue font-weight">
+                         mobile
+                            </h5><i class="fas fa-chevron-right"></i>
+                        </div>
+                                </div>
+                                <div class="col-9 pt-2">
+                                    
+                                    <div class="writing-number d-flex flex-row align-items-center">
+   <span id="numberCode" name="spanNumber">+994</span>
+   <input type="number"placeholder="Phone" name="numberCode" id="numberCodes" >
+                                    </div>
+                                </div>
+    </div></div>
+</div>
+
+
+</form>
+</div></div>
+</div>
+</div>
+
+
+
+
+   
+</div>
+    <!-- </div>
+</div> -->
+</section>
+<script src="js/kodjquery.js"></script>
+<script src="js/click.js"></script>
+</body>
+</html>
